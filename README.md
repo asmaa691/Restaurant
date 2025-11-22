@@ -6,8 +6,36 @@ Live Demo
 
 -- Screenshots of the UI
 
-![Uploading Screenshot 2025-11-22 210205.png…]()
 
+### Home Page
+![Home Page](/screenshots/home.png)
+
+### Menu Page
+![Menu Page](/screenshots/menu.png)
+
+### Shopping Cart
+![Cart Functionality](/screenshots/cart.png)
+
+### Dish Details
+![Dish Details](/screenshots/dishDetails1.png)
+### Dish Details
+![Dish Details](/screenshots/dishDetails2.png)
+
+### Dish Details
+![Dish Details](/screenshots/dishDetails3.png)
+
+### Dish Details
+![Dish Details](/screenshots/dishDetails4.png)
+
+
+### About Page
+![About Page](/screenshots/about.png)
+
+### Contact Page
+![Contact Page](/screenshots/contact.png)
+
+### Services Page
+![Services Page](/screenshots/services.png)
 
 
 -- Key Features:
@@ -43,7 +71,7 @@ npm or yarn package manager
 
 Steps to Run Locally
   1-Clone the repository
-   git clone https://github.com/[asmaa691]/flames-restaurant.git
+   git clone https://github.com/[asmaa691]/Restaurant.git
    cd flames-restaurant
   2-Install dependencies
    npm install
