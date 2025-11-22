@@ -43,7 +43,7 @@ npm or yarn package manager
 
 Steps to Run Locally
   1-Clone the repository
-   git clone https://github.com/[your-username]/flames-restaurant.git
+   git clone https://github.com/[asmaa691]/flames-restaurant.git
    cd flames-restaurant
   2-Install dependencies
    npm install
