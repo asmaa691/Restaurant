@@ -6,6 +6,7 @@ Live Demo
 
 -- Screenshots of the UI
 
+![Uploading Screenshot 2025-11-22 210205.png…]()
 
 
 
