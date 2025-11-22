@@ -37,6 +37,7 @@ Live Demo
 ### Services Page
 ![Services Page](/screenshots/services.png)
 
+<img width="1365" height="643" alt="services png" src="https://github.com/user-attachments/assets/fd01690e-7574-4c51-bf7b-0a88838e1026" />
 
 -- Key Features:
 
