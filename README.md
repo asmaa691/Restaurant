@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+-- FLAMES Restaurant - React Web Application
+A modern, responsive restaurant website built with React.js that showcases menu items, allows customers to browse dishes, add items to a cart, and learn about the restaurant. The application features a clean, user-friendly interface with a warm color scheme that reflects the restaurant's branding.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Demo
+[Add your live demo link here after deployment to Vercel/Netlify]
 
-## Available Scripts
+-- Screenshots of the UI
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+-- Key Features:
+
+Interactive menu browsing with high-quality food images
+
+Dynamic shopping cart with add/remove functionality
+
+Individual dish detail pages
+
+Responsive design for all devices
+
+Professional restaurant branding and information
+
+This project demonstrates modern React development practices including component-based architecture, state management, client-side routing, and responsive CSS design.
+
+-- Technologies Used
+Frontend: React.js, React Router DOM
+
+Styling: Custom CSS with Flexbox/Grid
+
+Build Tool: Create React App
+
+Version Control: Git & GitHub
+
+Deployment: GitHub Pages
+
+ --Installation & Setup
+Prerequisites
+Node.js (v14 or higher)
+
+npm or yarn package manager
+
+Steps to Run Locally
+  1-Clone the repository
+   git clone https://github.com/[your-username]/flames-restaurant.git
+   cd flames-restaurant
+  2-Install dependencies
+   npm install
+  3-Start development server
+   npm start
+  4-Open your browser
+   Navigate to http://localhost:3000 to view the application  
+
+  
+-- Available Scripts
+npm start
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser.
+
+The page will reload when you make changes.
 You may also see any lint errors in the console.
 
-### `npm test`
+npm test
+Launches the test runner in the interactive watch mode.
+See the section about running tests for more information.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
+npm run build
+Builds the app for production to the build folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+-- project structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Restaurant/
+├── public/
+│   └── assets/          # Image files
+│       ├── pizza.jpg
+│       ├── burger.jpg
+│       ├── pasta.jpg
+│       └── salad.jpg
+├── src/
+│   ├── components/      # Reusable components
+│   │   ├── Nav.js      # Navigation bar
+│   │   ├── Footer.js   # Footer component
+│   │   ├── DishCard.js # Dish display card
+│   │   └── Cart.js     # Shopping cart
+│   ├── pages/          # Page components
+│   │   ├── Home.js     # Landing page
+│   │   ├── About.js    # About us
+│   │   ├── Menu.js     # Menu with cart
+│   │   ├── Dish.js     # Dish details
+│   │   ├── Contact.js  # Contact info
+│   │   └── Services.js # Services offered
+│   ├── data/
+│   │   └── dishes.js   # Menu data
+│   ├── App.js          # Main app component
+│   ├── index.js        # App entry point
+│   └── index.css       # Global styles
+└── package.json        # Dependencies
+ 
+--Usage
+ --Browse Menu
+Visit the Menu page to see all available dishes
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Click "View Details" for more information about any dish
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Use "Add to Cart" to add items to your order
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ --Manage Cart
+View your cart at the bottom of the Menu page
 
-## Learn More
+See itemized list with prices
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Remove unwanted items with the "Remove" button
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Monitor your total cost in real-time
 
-### Code Splitting
+ --Learn More
+Check the About page for restaurant information
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Visit Contact page for location and contact details
 
-### Analyzing the Bundle Size
+Explore Services page for feature overview
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
