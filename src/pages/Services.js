@@ -1,11 +1,9 @@
-
-
 import React from 'react';
 
 export default function Services() {
   return (
     <div className="services">
-      <h2>Our Services</h2>
+      <h2 className="red">Our Services</h2>
       <ul>
         <li>Browse the restaurant menu with images and prices</li>
         <li>Add items to the cart</li>

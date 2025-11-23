@@ -6,12 +6,10 @@ import Cart from '../components/Cart';
 export default function Menu() {
   const [cartItems, setCartItems] = useState([]);
 
-  // Function to add a dish to cart
   const addToCart = (dish) => {
     setCartItems([...cartItems, dish]);
   };
 
-  // Function to remove dish from cart
   const removeFromCart = (index) => {
     const newCart = [...cartItems];
     newCart.splice(index, 1);
@@ -20,10 +18,9 @@ export default function Menu() {
 
   return (
     <section className="container">
-      <h2>Menu</h2>
+      <h2 className="red">Menu</h2>
 
-      {/* Grid of dishes */}
-      <div className="menu-grid">
+      <div className="grid">
         {dishes.map(d => (
           <DishCard
             key={d.id}
@@ -33,9 +30,7 @@ export default function Menu() {
         ))}
       </div>
 
-      {/* Cart */}
       <Cart cartItems={cartItems} removeFromCart={removeFromCart} />
     </section>
   );
 }
-

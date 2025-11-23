@@ -5,25 +5,25 @@ export default function Cart({ cartItems, removeFromCart }) {
 
   return (
     <div className="cart">
-      <h3>Your Cart</h3>
+      <h3 className="red">Your Cart</h3>
       {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
-        <ul>
+        <div>
           {cartItems.map((item, index) => (
-            <li key={index} className="cart-item">
+            <div key={index} className="cart-item">
               <span>{item.name} - ${item.price}</span>
               <button
-                className="remove-btn"
+                className="remove"
                 onClick={() => removeFromCart(index)}
               >
                 Remove
               </button>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       )}
-      <h4>Total: ${total}</h4>
+      <h4 className="red">Total: ${total}</h4>
     </div>
   );
 }

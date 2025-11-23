@@ -6,26 +6,26 @@ body {
   color: #333;
 }
 
-/* Container */
+/* Layout */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
 }
-/* Nav */
+
+/* Navigation */
 nav {
-  background-color: #b33a2f;
+  background: #b33a2f;
   color: white;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;    /* vertically center content */
-  flex-wrap: nowrap;      /* prevent wrapping to next line */
+  align-items: center;
 }
 
 nav ul {
   display: flex;
-  gap: 1.5rem;           /* spacing between links */
+  gap: 1.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -41,22 +41,21 @@ nav a:hover {
   color: #ffd699;
 }
 
-
 /* Footer */
 footer {
-  background-color: #8c1f12;
+  background: #8c1f12;
   color: white;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
 }
 
-/* Dish cards */
-.dish-card {
+/* Cards */
+.card {
   border: 1px solid #e6c9b2;
   border-radius: 8px;
   padding: 0.5rem;
-  background-color: #fff3e6;
+  background: #fff3e6;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   margin-bottom: 1rem;
   display: flex;
@@ -66,12 +65,12 @@ footer {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.dish-card:hover {
+.card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
-.dish-card img {
+.card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -79,24 +78,25 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-.dish-card h3 {
+.card h3 {
   margin: 0.5rem 0;
   color: #b33a2f;
 }
 
-.dish-card p {
+.card p {
   margin: 0.3rem 0;
   color: #5a3a2b;
 }
 
-.buttons {
+/* Buttons */
+.btns {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
 }
 
-.button {
-  background-color: #ff7043;
+.btn {
+  background: #ff7043;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -106,8 +106,8 @@ footer {
   font-weight: bold;
 }
 
-.button:hover {
-  background-color: #e64a19;
+.btn:hover {
+  background: #e64a19;
 }
 
 /* Cart */
@@ -116,28 +116,27 @@ footer {
   padding: 1rem;
   border: 1px solid #b33a2f;
   border-radius: 8px;
-  background-color: #fff3e6;
+  background: #fff3e6;
 }
 
 .cart h3, .cart h4 {
   color: #b33a2f;
 }
 
-/* New cart item styling for aligned delete buttons */
 .cart-item {
   display: flex;
-  align-items: center;       /* vertically center content */
-  justify-content: space-between; /* text left, button right */
+  align-items: center;
+  justify-content: space-between;
   padding: 0.5rem 0;
   border-bottom: 1px solid #e6c9b2;
 }
 
 .cart-item span {
-  flex: 1; /* text takes up remaining space */
+  flex: 1;
 }
 
-.remove-btn {
-  background-color: #b33a2f;
+.remove {
+  background: #b33a2f;
   color: white;
   border: none;
   padding: 0.2rem 0.5rem;
@@ -145,19 +144,21 @@ footer {
   border-radius: 3px;
 }
 
-.remove-btn:hover {
-  background-color: #8c1f12;
+.remove:hover {
+  background: #8c1f12;
 }
 
-/* Responsive layout */
-.menu-grid {
+/* Grid */
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }
+
+/* Services */
 .services {
   padding: 2rem;
-  background-color: #fff3e6;
+  background: #fff3e6;
   border-radius: 8px;
   max-width: 800px;
   margin: 2rem auto;
@@ -171,11 +172,75 @@ footer {
 }
 
 .services ul {
-  list-style-type: disc;
+  list-style: disc;
   padding-left: 2rem;
   color: #5a3a2b;
 }
 
 .services li {
   margin-bottom: 0.5rem;
+}
+
+/* Utility Classes */
+.center { text-align: center; }
+.flex { display: flex; }
+.between { justify-content: space-between; }
+.center-items { align-items: center; }
+.gap { gap: 1rem; }
+
+/* Colors */
+.red { color: #b33a2f; }
+.dark-red { color: #8c1f12; }
+.brown { color: #5a3a2b; }
+.white { color: white; }
+
+.bg-red { background: #b33a2f; }
+.bg-dark-red { background: #8c1f12; }
+
+/* Spacing */
+.pad { padding: 1rem; }
+.pad-lg { padding: 2rem; }
+.mb { margin-bottom: 1rem; }
+.mt { margin-top: 2rem; }
+
+/* Text */
+.text-lg { font-size: 1.125rem; }
+.text-xl { font-size: 1.25rem; }
+.text-2xl { font-size: 1.5rem; }
+.text-3xl { font-size: 1.875rem; }
+.text-4xl { font-size: 2.25rem; }
+.bold { font-weight: bold; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .btns {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .card {
+    margin: 0.5rem;
+  }
 }

@@ -6,20 +6,20 @@ export default function Dish() {
   const { id } = useParams();
   const dish = dishes.find(d => d.id === parseInt(id));
 
-  if (!dish) return <p className="p-4">Dish not found.</p>;
+  if (!dish) return <p className="pad">Dish not found.</p>;
 
   return (
-    <section className="container mx-auto p-4">
-      <h2 className="text-2xl font-bold mb-4">{dish.name}</h2>
+    <section className="container pad">
+      <h2 className="text-2xl bold mb">{dish.name}</h2>
 
       <img 
         src={dish.image} 
         alt={dish.name} 
-        className="w-full max-w-md rounded mb-4"
+        className="card-img"
       />
 
-      <p className="mb-2">Price: ${dish.price}</p>
-      <p className="text-gray-700">{dish.description}</p>
+      <p className="mb">Price: ${dish.price}</p>
+      <p className="brown">{dish.description}</p>
     </section>
   );
 }
