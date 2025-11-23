@@ -1,41 +1,39 @@
 -- FLAMES Restaurant - React Web Application
 A modern, responsive restaurant website built with React.js that showcases menu items, allows customers to browse dishes, add items to a cart, and learn about the restaurant. The application features a clean, user-friendly interface with a warm color scheme that reflects the restaurant's branding.
 
-Live Demo
-[Add your live demo link here after deployment to Vercel/Netlify]
 
 -- Screenshots of the UI
 
 
 ### Home Page
-![Home Page](/screenshots/home.png)
+
+<img width="1346" height="624" alt="home" src="https://github.com/user-attachments/assets/73eb9085-e40b-4ddd-8030-97f1e4db7243" />
 
 ### Menu Page
-![Menu Page](/screenshots/menu.png)
+<img width="1345" height="617" alt="menu" src="https://github.com/user-attachments/assets/ff00dffa-6e89-4b19-9383-6dd66e47ba7d" />
+
 
 ### Shopping Cart
-![Cart Functionality](/screenshots/cart.png)
+<img width="1315" height="666" alt="cart" src="https://github.com/user-attachments/assets/2ee017b7-efc9-4397-a5fa-dcbaec27a77c" />
+
 
 ### Dish Details
-![Dish Details](/screenshots/dishDetails1.png)
-### Dish Details
-![Dish Details](/screenshots/dishDetails2.png)
+<img width="1355" height="638" alt="dishDetails1" src="https://github.com/user-attachments/assets/80b3f6e2-c298-404b-9cec-87a24f09602c" />
 
-### Dish Details
-![Dish Details](/screenshots/dishDetails3.png)
 
-### Dish Details
-![Dish Details](/screenshots/dishDetails4.png)
-
+### Mobile
+<img width="506" height="596" alt="mobile png" src="https://github.com/user-attachments/assets/7aef6f9a-e4ba-4beb-9729-cb9e12c24abb" />
 
 ### About Page
-![About Page](/screenshots/about.png)
+<img width="1340" height="641" alt="about" src="https://github.com/user-attachments/assets/5fd3a0cb-053a-4bfc-9c43-7cafe3c7c1c2" />
+
 
 ### Contact Page
-![Contact Page](/screenshots/contact.png)
+<img width="1348" height="637" alt="contact" src="https://github.com/user-attachments/assets/7dd6c7ed-29b7-43ee-9059-82e303af2b46" />
+
 
 ### Services Page
-![Services Page](/screenshots/services.png)
+<img width="1328" height="630" alt="services" src="https://github.com/user-attachments/assets/4314c62e-4400-49d0-ab74-fd217b6a67dd" />
 
 
 -- Key Features:
