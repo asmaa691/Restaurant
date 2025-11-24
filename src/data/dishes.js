@@ -1,4 +1,4 @@
-// Named export for dishes
+
 export const dishes = [
   { id: 1, name: "Pizza Margherita", price: 10, image: "/assets/pizza.jpg",
     description: "A traditional Italian favorite topped with rich tomato sauce, melted mozzarella, and fresh basil leaves."
